@@ -11,9 +11,9 @@ function checkDiscount() {
   let dayOfTheWeek = document.getElementById("day");
   let value = dayOfTheWeek.options[dayOfTheWeek.selectedIndex].value;
 
-  if (value == "Tuesday" || value == "Thursday" || (age > 12 && age < 21)) {
-    document.getElementById('result').innerHTML = "<p>You are eligible for the discount.</p>";
+  if (value == "tuesday" || value == "thursday" || (age > 12 && age < 21)) {
+    document.getElementById('result').innerHTML = "<p>You are eligible for the discount.</p><p>age = " + age + " day = " + dayOfTheWeek + "</p>";
   } else {
-    document.getElementById('result').innerHTML = "<p>You are NOT eligible for the discount.</p>";
+    document.getElementById('result').innerHTML = "<p>You are NOT eligible for the discount.</p><p>age = " + age + " day = " + dayOfTheWeek + "</p>";
   }
 }
